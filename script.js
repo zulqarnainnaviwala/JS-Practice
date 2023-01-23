@@ -82,6 +82,13 @@ obj.age=12;
 // Conditional Operators    
 // Type Operators           typeof   instanceof(Returns true if an object is an instance of an object type)
 
+// Shift Assignment Operators       <<=     >>=     >>>=
+// Bitwise Assignment Operators     &=      ^=      |=
+// Logical Assignment Operators(ES2020)     &&=     ||=     ??=
+//      &&= --> x &&= y --> x = x && (x = y)
+//      ||= --> x ||= y --> x = x || (x = y)
+//      ??= --> x ??= y --> x = x ?? (x = y)
+
 // Type Coercion in JS
 var n = 5 + 5; //10
 var n = "5" + 5; //55
@@ -97,6 +104,22 @@ var n = false - '10'; //-10
 
 // x ** y produces the same result as Math.pow(x,y):
 // JavaScript Operator Precedence Values : https://www.w3schools.com/js/js_precedence.asp
+
+// *************JavaScript Datatypes *****************
+//  Primitive           Reference
+// 1. String            1.Array
+// 2. Number            2.Object
+// 3. Bigint            3.Date
+// 4. Boolean
+// 5. Undefined
+// 6. Null
+// 7. Symbol
+
+//concept of variable initialization through value and reference  
+// 1.pass by value : do not mutates to the passed varaible in future if change accur in new initialised
+// 2.pass by reference : mutates to the passed varaible(object) in future  if change accur in new initialised
+
+
 
 
 // *************Exercise Imp*****************
@@ -125,5 +148,8 @@ var date =  new Date();
 var year  = date.getFullYear();
 var month  = date.getMonth();
 var day  = date.getDay();
+
   
 
+// JS is single threaded program , so how Async behavior acheiving (event loop concept : link to video below) 
+//https://www.youtube.com/watch?v=8aGhZQkoFbQ
