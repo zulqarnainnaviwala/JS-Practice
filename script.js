@@ -234,3 +234,27 @@ var text = '\'ABCDEFGHIJKLMNOPQRSTUVWXYZ\''; // 'A....Z'
 var x = new String("John"); //The new keyword complicates the code and slows down execution speed.
 var y = new String("John"); 
 // (x===y) //Comparing two JavaScript objects always returns false.
+
+//JavaScript String Methods
+let text = "     ABCDEFGHIJKLMNO     PQRSTUVWXYZ   ";
+
+console.log(text.length);
+ console.log(text.slice(0,9)) ;         //dont mutate
+ console.log(text.substring(-5,9));     //dont mutate & value less than 0 treated as 0     
+ console.log(text.substr(6,9));         //dont mutate & second parameter specifies the length of the extracted part.
+      console.log(text.substr(-9));     //dont mutate & 9 character from end
+      console.log(text.substr(-3,1));   //3rd last character
+ console.log(text.replace("A","Z"));    //dont mutate & replaces only the first match (case sensitive)
+      console.log(text.replace(/A/g,"Z"));//replaces all (case sensitive)
+ console.log(text.replaceAll("A","Z"))   //
+ console.log(text.toUpperCase())
+ console.log(text.toLowerCase())
+ console.log(text.concat())
+ console.log(text.trim())
+ console.log(text.trimStart())
+ console.log(text.trimEnd())
+ console.log(text.padStart())
+ console.log(text.padEnd())
+ console.log(text.charAt())
+ console.log(text.charCodeAt())
+ console.log(text.split())
