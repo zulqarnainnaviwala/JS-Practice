@@ -30,14 +30,30 @@ class Person {
   person.setName('Doe'); //this will only update name on class level which Person(class), it will change dynamically on global(class) scope
   console.log(person.getName());
   person.introduceSelf();
-  
- 
+
+  /* ************************************************************************************************************************************** */
  
  class Make{
-    name;
-    constructor(name){
+    name;     //optional in JS
+    year;
+    constructor(name,year){
        this.name= name;
+       this.year=year;
     }
     getDetails(){}
  }
- class Mo
+ class Model extends Make{
+  model;
+
+  constructor(name,year,model){
+    super(name,year);
+    this.model = model;
+  }
+
+  getDetails(){
+    console.log('Make/Year/Model',this.name,this.year,this.model);
+  }
+
+ }
+ let car  = new Model('home','19','city');
+ car.getDetails();
