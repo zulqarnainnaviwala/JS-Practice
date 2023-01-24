@@ -1,4 +1,4 @@
-//encapsulation --> acheived by #, we need to create getter setter for retreiving/updating variables
+// encapsulation --> acheived by #, we need to create getter setter for retreiving/updating variables
 class Person {
     //properties
     #name;
@@ -55,5 +55,5 @@ class Person {
   }
 
  }
- let car  = new Model('home','19','city');
- car.getDetails();
+ let car1  = new Model('home','19','city');
+ car1.getDetails();

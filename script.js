@@ -1,5 +1,4 @@
 // *************JavaScript Output*****************
-
 //     Writing into an HTML element, using innerHTML.
 document.getElementById("demo").innerHTML = 5 + 6;
 //     Writing into the HTML output using document.write().
@@ -49,8 +48,9 @@ var name = "ZULQARNAIN";
 
 // Always declare JavaScript variables with var,let, orconst.
 var name; 
-let name; 
-const name = 'z';
+// let name; 
+// const name = 'z';
+
 //      The var keyword is used in all JavaScript code from 1995 to 2015.
 //      The let and const keywords were added to JavaScript in 2015.
 // JavaScript identifiers are case-sensitive.
@@ -127,7 +127,7 @@ var n = false - '10'; //-10
 // 1.pass by value : do not mutates to the passed varaible in future if change accur in new initialised
 // 2.pass by reference : mutates to the passed varaible(object) in future  if change accur in new initialised
 
-car = undefined;    // Value is undefined, type is undefined
+//car = undefined;    // Value is undefined, type is undefined
 
 
 // *************JavaScript Functions *****************
@@ -194,4 +194,43 @@ var newFunc = newObj.nameCall.bind(newObj);
 newFunc();
 
 // *************JavaScript Events *****************
+// Event handlers can be used to handle and verify user input, user actions, and browser actions
+/* Syntax: <element event='some JavaScript'> */
+/* Syntax: <element event="some JavaScript"> */
 
+function onClick() {
+  document.getElementById("onclick").innerHTML = Date();
+}
+function onMouseOut(){
+   document.getElementById("btn2").style.backgroundColor = 'yellow';
+}
+function onMouseOver(){
+   document.getElementById("btn2").style.backgroundColor = 'red';
+}
+function onChange() {
+   var x = document.getElementById("mySelect").value;
+   document.getElementById("onChange").innerHTML = "You selected: " + x;
+}
+function onKeyDown() {
+   document.getElementById("onKeyDown").innerHTML = "You pressed a key inside the input field";
+ }
+ function onLoad(){
+   alert("Page is loaded");
+}
+
+
+// *************JavaScript Strings *****************
+var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //A.....Z
+var text = "'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"; // 'A....Z'
+var text = '"ABCDEFGHIJKLMNOPQRSTUVWXYZ"'; // "A....Z"
+
+// Escape Character
+var text = "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\""; // "A....Z"
+var text = '\'ABCDEFGHIJKLMNOPQRSTUVWXYZ\''; // 'A....Z'
+
+// other escape sequences valid in JavaScript -- \b \n \r \t \v
+
+// JavaScript Strings as Objects
+var x = new String("John"); //The new keyword complicates the code and slows down execution speed.
+var y = new String("John"); 
+// (x===y) //Comparing two JavaScript objects always returns false.

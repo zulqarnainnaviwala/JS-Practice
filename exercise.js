@@ -35,7 +35,7 @@ Math.ceil(15.1); //16
 Math.sqrt(9); //3
 
 // Choose the correct conditional (ternary) operator to alert "Too young" if age is less than 18, otherwise alert "Old enough".
-var age = n;
+var age = 17;
 var voteable = (age < 18) ? "Too young" : "Old enough";
 console.log(voteable);
 
@@ -58,7 +58,7 @@ default:
 }
 
 //for of to iterate on array and getting each index value
-const fruits = ["Apple", "Banana", "Orange"];
+var fruits = ["Apple", "Banana", "Orange"];
 for (x of fruits ) {
   console.log(x);
 }
@@ -71,10 +71,10 @@ while(i<10){
 
 document.getElementById("demo").innerHTML = "Hello";
 document.getElementsByTagName("p")[0].innerHTML = "Hello";
-document.getElementsByClassName("test")[0].innerHTML = "Hello";
+// document.getElementsByClassName("test")[0].innerHTML = "Hello";
 document.getElementById("demo").style.display = "none";
-document.getElementById("myText").value = "Have a nice day!";
-document.getElementById("demo").addEventListener("click", myFunction)
+// document.getElementById("myText").value = "Have a nice day!";
+// document.getElementById("demo").addEventListener("click", myFunction)
 
 
 
