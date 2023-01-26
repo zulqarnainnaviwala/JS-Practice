@@ -246,7 +246,7 @@ console.log(text.length);
       console.log(text.substr(-3,1));   //3rd last character
  console.log(text.replace("A","Z"));    //dont mutate & replaces only the first match (case sensitive)
       console.log(text.replace(/A/g,"Z"));//replaces all (case sensitive)
- console.log(text.replaceAll("A","Z"))   //
+ console.log(text.replaceAll("A","Z"))   //replaces all
  console.log(text.toUpperCase())
  console.log(text.toLowerCase())
  console.log(text.concat())

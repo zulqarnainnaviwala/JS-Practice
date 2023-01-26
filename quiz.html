@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+    <title>Quiz 2</title>
+</head>
+
+<body>
+
+    <!-- 
+    <form action="javascript:void(0)">
+
+        <input type="number" name="num" id="num" minlength="6">
+        <input type="submit" value="submit" onsubmit="calOdds()">
+
+    </form> -->
+
+
+    <script>
+        // Setion II - 1
+        // let userInput = parseInt(prompt("Enter your age :",));
+
+        // function ageInToDays() {
+        //     return `you are ${userInput * 365} days old`;
+        // }
+        // alert(ageInToDays());
+
+
+        // Setion II - 2
+        // function palindrom() {
+        //     let text = prompt("enter string to check palindrome");
+        //     let reverseText = text.split("").reverse().join("");
+        //     if (text === reverseText) {
+        //         alert("palindrome");
+        //     }
+        //     else {
+        //         alert("not a palindrome")
+        //     }
+        // }
+        // palindrom();
+
+        // if(text.length === reverseText.length){
+        //     for(let i=0 ; i < text.length; i++){
+        //         if(text[i] != reverseText[i]){
+        //             alert("not a palindrom");
+        //             break;
+        //         }
+        //         else{
+        //             alert("yes")
+        //         }
+        //     }
+        // }
+        // else
+        // {
+        //     alert("string is not a palindrome")
+        // }
+
+        // Setion II - 3
+        // function specifiedDecimacalPlaces(number=5.5555, decimals=3){
+        //     let result = number.toFixed(decimals);
+        //     alert(result);
+        // }
+        // specifiedDecimacalPlaces();
+        // specifiedDecimacalPlaces(45.25454,5);
+
+
+        // Setion III - 1
+        // In regular function, you have to use return keyword to return any value other will returb undefined , while in arrow function it acts same but if there is only one statement just omiting curly braces and return keyword will also return statement
+        // regular function do have arguments binding while arrow functions dont
+        // regular functions can be used as constructor functions while arrow functions could never
+
+
+        // Setion III - 2
+        // function calOdds() {
+        //     let number;
+        //     let total=0;
+        //     do {
+        //          number  = +prompt("enter value greater than 5 digits")
+        //     } while (number.length < 6);
+
+        //     for(i=0; i<number.length; i++){
+        //         if(number[i]%2 != 0){
+        //             total += Number(number[i]);
+        //         }
+        //     }
+        //     alert(total)
+        // }
+        // calOdds();
+
+
+        // Setion III - 4
+        // let time = (new Date());
+        // let birthDate = (new Date("October 14, 1997"));
+
+        // let ageInMiliseconds = time.getTime() - birthDate.getTime();
+
+        // let year = Math.floor(ageInMiliseconds / 1000 / 60 / 60 / 24 / 30 / 12);
+        // let month = Math.floor(ageInMiliseconds / 1000 / 60 / 60 / 24 / 30);
+        // let days = Math.floor(ageInMiliseconds / 1000 / 60 / 60 / 24);
+
+        // alert(`    Year : ${year}
+        // Month : ${month}
+        // Days : ${days}`);
+
+        // Setion IV
+        // let matrixA, matrixB, matrixC;
+
+        // // Get matrix dimensions from user
+        // let rowA = parseInt(prompt("Enter the number of rows for matrix A:"));
+        // let colA = parseInt(prompt("Enter the number of columns for matrix A:"));
+        // let rowB = parseInt(prompt("Enter the number of rows for matrix B:"));
+        // let colB = parseInt(prompt("Enter the number of columns for matrix B:"));
+
+        // // Check if matrices can be multiplied
+        // while (colA !== rowB) {
+        //     alert("Matrix A's columns and Matrix B's rows must be equal for multiplication. Please enter correct values.");
+        //     // Get matrix dimensions again from user
+        //     rowA = parseInt(prompt("Enter the number of rows for matrix A:"));
+        //     colA = parseInt(prompt("Enter the number of columns for matrix A:"));
+        //     rowB = parseInt(prompt("Enter the number of rows for matrix B:"));
+        //     colB = parseInt(prompt("Enter the number of columns for matrix B:"));
+        // }
+
+        // // Create matrix A
+        // matrixA = [];
+        // for (let i = 0; i < rowA; i++) {
+        //     matrixA[i] = [];
+        //     for (let j = 0; j < colA; j++) {
+        //         matrixA[i][j] = parseInt(prompt("Enter the value for matrix A at row " + (i + 1) + " and column " + (j + 1)));
+        //     }
+        // }
+
+        // // Create matrix B
+        // matrixB = [];
+        // for (let i = 0; i < rowB; i++) {
+        //     matrixB[i] = [];
+        //     for (let j = 0; j < colB; j++) {
+        //         matrixB[i][j] = parseInt(prompt("Enter the value for matrix B at row " + (i + 1) + " and column " + (j + 1)));
+        //     }
+        // }
+
+        // // Multiply matrices A and B and store in matrix C
+        // matrixC = [];
+        // for (let i = 0; i < rowA; i++) {
+        //     matrixC[i] = [];
+        //     for (let j = 0; j < colB; j++) {
+        //         matrixC[i][j] = 0;
+        //         for (let k = 0; k < colA; k++) {
+        //             matrixC[i][j] += matrixA[i][k] * matrixB[k][j];
+        //         }
+        //     }
+        // }
+
+        // // Display the output in proper format
+        // console.log("Matrix A:");
+        // for (let i = 0; i < rowA; i++) {
+        //     console.log(matrixA[i]);
+        // }
+        // console.log("Matrix B:");
+        // for (let i = 0; i < rowB; i++) {
+        //     console.log(matrixB[i]);
+        // }
+        // console.log("Matrix C (result of A * B):");
+        // for (let i = 0; i < rowA; i++) {
+        //     console.log(matrixC[i]);
+        // }
+
+    
+
+    </script>
+</body>
+
+</html>
